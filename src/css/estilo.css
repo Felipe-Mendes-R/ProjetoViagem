@@ -1,0 +1,41 @@
+/* Reset básico universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#headerPrincipal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: aqua;
+    
+    padding: 10px;
+    max-width: 100%;
+    max-height: 150px;
+}
+
+#comeco img{
+    max-width: 100px;
+}
+
+#meio{
+    display: flex;
+}
+
+#meio input{
+    width: 175px;
+    height: 25px;
+    margin: auto auto;
+}
+
+#fim{
+    display: flex;
+}
+
+.icone{
+    max-width: 75px;
+    max-height: 75px;
+}
