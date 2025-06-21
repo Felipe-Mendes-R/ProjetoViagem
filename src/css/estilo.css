@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-#headerPrincipal{
+#cabecalho{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +33,10 @@
 
 #fim{
     display: flex;
+}
+
+#fim div{
+    margin-left: 25px;
 }
 
 .icone{
