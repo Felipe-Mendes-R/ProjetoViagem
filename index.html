@@ -16,12 +16,12 @@
     <header id="cabecalho">
 
         <div id="comeco">
-            <img src="./src/assets/placeholder.jpg" alt="Logo"/>
+            <img src="./src/assets/logo.png" alt="Logo"/>
         </div>
 
         <div id="meio">
             <a href="#">
-                <img src="./src/assets/iconePesquisa.png" alt="Ícone de pesquisa" class="icone"/>
+                <img src="./src/assets/iconePesquisa.png" alt="Ícone de pesquisa" class="pesquisa"/>
             </a>
             <input type="text" placeholder="Pesquisar" id="headerTexto"></input>
         </div>
@@ -30,14 +30,14 @@
 
             <div class="suporte">
                 <a href="#">
-                    <img src="./src/assets/placeholder.jpg" alt="Ícone de suporte" class="icone"/>
+                    <img src="./src/assets/iconeSuporte.png" alt="Ícone de suporte" class="icone"/>
                 </a>
                 <a id="headerTexto" href="#">Suporte</a>
             </div>
 
             <div class="login">
                 <a href="#">
-                    <img src="./src/assets/placeholder.jpg" alt="Ícone de Login" class="icone"/>
+                    <img src="./src/assets/iconeLogin.png" alt="Ícone de Login" class="icone"/>
                 </a>
                 <a id="headerTexto" href="#">Login</a>
             </div>
@@ -46,13 +46,20 @@
 
     <!-- Navegação -->
     <nav id="navegacao">
-        <a href="#">Passagens</a>
-        <a href="#">Hotéis</a>
-        <a href="#">Pacotes</a>
-        <a href="#">Aluguéis</a>
-        <a href="#">Ofertas</a>
-        <a href="#">Contato</a>
+        <a class="itemNav" href="#">Passagens</a>
+        <a class="itemNav" href="#">Hotéis</a>
+        <a class="itemNav" href="#">Pacotes</a>
+        <a class="itemNav" href="#">Aluguéis</a>
+        <a class="itemNav" href="#">Ofertas</a>
+        <a class="itemNav" href="#">Contato</a>
     </nav>
+
+    <!-- Hamburguer -->
+     <div id="hamburguer">
+        <span class="barra"></span>
+        <span class="barra"></span>
+        <span class="barra"></span>
+     </div>
 
     <!-- Principal -->
     <main id="principal">
@@ -60,41 +67,41 @@
         <!-- Banner -->
         <div id="banner">
             <a href="#">
-                <img src="./src/assets/placeholder.jpg" alt="Banner"/>
+                <img src="./src/assets/banner.jpg" alt="Banner"/>
             </a>
         </div>
 
         <!-- Artigos -->
         <section id="secaoArtigos">
-            <article class="artigo">
-                <img class="fotoArtigo" src="./src/assets/placeholder.jpg"/>
-                <a class="tituloArtigo" href="#">São Paulo Minas Gerais Roraima</a>
-                <p class="paragrafoArtigo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis delectus, accusantium, cum sapiente vel ducimus impedit eos itaque magnam tenetur repudiandae placeat dolorem numquam labore facere nulla natus pariatur?</p>
-                <h4 class="precoArtigo">R$999,99</h4>
+            <article id="artigo1">
+                <img class="fotoArtigo" src="./src/assets/artigoCuritiba.jpg"/>
+                <a class="tituloArtigo" href="#">Curitiba</a>
+                <p class="paragrafoArtigo">Saindo de São Paulo <br/> Ida: 24/07/2025 <br/> Volta 31/07/2025 <br/> Ida e volta:</p>
+                <h4 class="precoArtigo">13x de R$99,99</h4>
                 <button class="botaoArtigo">Agendar</button>
             </article>
                 
-            <article class="artigo">
-                <img class="fotoArtigo" src="./src/assets/placeholder.jpg"/>
-                <a class="tituloArtigo" href="#">São Paulo Minas Gerais Roraima</a>
-                <p class="paragrafoArtigo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis delectus, accusantium, cum sapiente vel ducimus impedit eos itaque magnam tenetur repudiandae placeat dolorem numquam labore facere nulla natus pariatur?</p>
-                <h4 class="precoArtigo">R$999,99</h4>
+            <article id="artigo2">
+                <img class="fotoArtigo" src="./src/assets/artigoPorto.jpg"/>
+                <a class="tituloArtigo" href="#">Porto Alegre</a>
+                <p class="paragrafoArtigo">Saindo de São Paulo <br/> Ida: 21/07/2025 <br/> Volta 29/07/2025 <br/> Ida e volta:</p>
+                <h4 class="precoArtigo">13x de R$139,99</h4>
                 <button class="botaoArtigo">Agendar</button>
             </article>
 
-            <article class="artigo">
-                <img class="fotoArtigo" src="./src/assets/placeholder.jpg"/>
-                <a class="tituloArtigo" href="#">São Paulo Minas Gerais Roraima</a>
-                <p class="paragrafoArtigo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis delectus, accusantium, cum sapiente vel ducimus impedit eos itaque magnam tenetur repudiandae placeat dolorem numquam labore facere nulla natus pariatur?</p>
-                <h4 class="precoArtigo">R$999,99</h4>
+            <article id="artigo3">
+                <img class="fotoArtigo" src="./src/assets/artigoRecife.jpg"/>
+                <a class="tituloArtigo" href="#">Recife</a>
+                <p class="paragrafoArtigo">Saindo de São Paulo <br/> Ida: 28/07/2025 <br/> Volta 05/08/2025 <br/> Ida e volta:</p>
+                <h4 class="precoArtigo">13x de R$119,99</h4>
                 <button class="botaoArtigo">Agendar</button>
             </article>
 
-            <article class="artigo">
-                <img class="fotoArtigo" src="./src/assets/placeholder.jpg"/>
-                <a class="tituloArtigo" href="#">São Paulo Minas Gerais Roraima</a>
-                <p class="paragrafoArtigo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis delectus, accusantium, cum sapiente vel ducimus impedit eos itaque magnam tenetur repudiandae placeat dolorem numquam labore facere nulla natus pariatur?</p>
-                <h4 class="precoArtigo">R$999,99</h4>
+            <article id="artigo4">
+                <img class="fotoArtigo" src="./src/assets/artigoRio.jpg"/>
+                <a class="tituloArtigo" href="#">Rio de Janeiro</a>
+                <p class="paragrafoArtigo">Saindo de São Paulo <br/> Ida: 03/07/2025 <br/> Volta: 12/07/2025 <br/> Ida e volta:</p>
+                <h4 class="precoArtigo">13x de R$119,99</h4>
                 <button class="botaoArtigo">Agendar</button>
             </article>
         </section>
@@ -123,5 +130,9 @@
             </ul>
         </div>
     </footer>
+
+    <!-- Chamando o Javascript externo -->
+     <script src="./src/js/script.js"></script>
+
 </body>
 </html>

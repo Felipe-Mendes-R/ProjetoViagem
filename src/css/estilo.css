@@ -40,13 +40,17 @@ body{
 /* Começo do Header */
 
 #comeco img{
-    max-width: 100px;
+    max-width: 250px;
 }
 
 /* Meio do header */
 
 #meio{
     display: flex;
+}
+
+.pesquisa{
+    width: 100%;
 }
 
 #meio input{
@@ -75,8 +79,8 @@ body{
 }
 
 .icone{
-    max-width: 75px;
-    max-height: 75px;
+    width: auto;
+    height: 75px;
 }
 
 
@@ -91,6 +95,30 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+
+/* Hamburguer */
+
+#hamburguer {
+    display: none;
+
+    z-index: 10;
+    cursor: pointer;
+
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+
+.barra{
+    display: block;
+    width: 3rem;
+    height: .3rem;
+    background: var(--corSecundaria);
+    margin: .5rem auto;
+    border-radius: 1px;
+    transition: .5s;
 }
 
 
@@ -120,7 +148,7 @@ a:hover{
 
 #banner img{
     width: 100%;
-    max-height: 350px;
+    height: auto;
     margin-top: 25px;
 }
 
@@ -138,7 +166,49 @@ a:hover{
     align-items: center;
 }
 
-.artigo{
+#artigo1{
+    width: 20%;
+    height: 90%;
+    margin: 25px 10px 25px 10px;
+    background-color: var(--corPrincipal);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#artigo2{
+    width: 20%;
+    height: 90%;
+    margin: 25px 10px 25px 10px;
+    background-color: var(--corPrincipal);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#artigo3{
+    width: 20%;
+    height: 90%;
+    margin: 25px 10px 25px 10px;
+    background-color: var(--corPrincipal);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#artigo4{
     width: 20%;
     height: 90%;
     margin: 25px 10px 25px 10px;
@@ -153,12 +223,13 @@ a:hover{
 }
 
 .fotoArtigo{
-    width: 90%;
-    height: 40%;
+    width: 70%;
+    height: auto;
     border-radius: 10px;
 }
 
 .tituloArtigo{
+    font-size: 22px;
     font-weight: 550;
 }
 
@@ -166,6 +237,7 @@ a:hover{
     margin-left: 10px;
     margin-right: 10px;
     color: white;
+    font-size: 17px;
 }
 
 .precoArtigo{
@@ -193,7 +265,6 @@ a:hover{
     align-items: center;
     justify-content: space-around;
     margin: 0 auto;
-    padding: 0;
 }
 
 .tituloRodape{
@@ -211,4 +282,165 @@ a:hover{
 .listaRodape a{
     color: white;
     font-size: 18px;
+}
+
+
+
+
+/* Suporte mobile */
+@media(max-width:768px){
+
+/* Header */
+#cabecalho{
+    display: flex;
+    justify-content: center;
+
+    height: 120px;
+}
+
+/* Começo do Header */
+
+#comeco img{
+    min-height: 100px;
+    width: auto;
+}
+
+/* Meio do header */
+
+#meio{
+    display: none;
+}
+
+/* Final do header */
+
+#fim{
+    display: none;
+}
+
+/* Navegação */
+
+#navegacao{
+    display: none;
+}
+
+
+/* Hamburguer */
+
+#hamburguer {
+    display: block;
+}
+
+#navegacao.active{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+}
+
+#navegacao.active a{
+    margin: 5px auto 5px auto;
+}
+
+#hamburguer.active .barra:first-child {
+    transform: translateY(9px) rotate(360deg) rotate(45deg);
+    margin-right: 0px;
+}
+
+#hamburguer.active .barra:nth-child(2) {
+    display: none;
+}
+
+#hamburguer.active .barra:last-child {
+    transform: translateY(-9px) rotate(-360deg) rotate(-45deg);
+    margin-right: 0px;
+}
+
+
+/* Conteúdo principal */
+
+#principal{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Banner */
+
+#banner img{
+    width: 100%;
+    max-height: 200px;
+    margin-top: 25px;
+}
+
+/* Artigos */
+
+#secaoArtigos{
+    width: 100%;
+    height: 450px;
+    margin: 25px auto 25px auto;
+    background-color: rgb(189, 189, 189);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#artigo1{
+    width: 50%;
+    height: 95%;
+    margin: 10px 5px 10px 5px;
+    background-color: var(--corPrincipal);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#artigo2{
+    width: 50%;
+    height: 95%;
+    margin: 10px 5px 10px 5px;
+    background-color: var(--corPrincipal);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#artigo3{
+    display: none;
+}
+
+#artigo4{
+    display: none;
+}
+
+
+/* Rodapé */
+
+.tituloRodape{
+    color: white;
+    font-size: 18px;
+}
+
+.paragrafoRodape{
+    color: white;
+    font-size: 15px;
+}
+
+.listaRodape{
+    list-style: none;
+}
+
+.listaRodape a{
+    color: white;
+    font-size: 15px;
+}
+
 }
