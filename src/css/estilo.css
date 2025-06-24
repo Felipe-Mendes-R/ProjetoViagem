@@ -426,12 +426,12 @@ a:hover{
 
 .tituloRodape{
     color: white;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .paragrafoRodape{
     color: white;
-    font-size: 15px;
+    font-size: 11px;
 }
 
 .listaRodape{
@@ -440,7 +440,7 @@ a:hover{
 
 .listaRodape a{
     color: white;
-    font-size: 15px;
+    font-size: 11px;
 }
 
 }
